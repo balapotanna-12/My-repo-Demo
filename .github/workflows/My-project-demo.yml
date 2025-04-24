@@ -1,0 +1,10 @@
+name:  Build and deploy to GHCR
+
+on:  
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Where to deploy?'
+        required: true
+        default: 'dev'
+
